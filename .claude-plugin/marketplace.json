@@ -1,0 +1,16 @@
+{
+  "name": "founder-juridico-br",
+  "owner": {
+    "name": "Aster"
+  },
+  "metadata": {
+    "description": "Plugins de direito brasileiro para founders de software."
+  },
+  "plugins": [
+    {
+      "name": "founder-juridico-br",
+      "source": "./",
+      "description": "Direito brasileiro para founders de software, com citações literais das leis."
+    }
+  ]
+}

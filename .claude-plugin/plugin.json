@@ -1,0 +1,9 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "founder-juridico-br",
+  "version": "0.1.0",
+  "description": "Direito brasileiro para founders de software: Termos de Uso, Política de Privacidade (LGPD), checkout e assinatura (CDC), Marco Civil, ECA Digital, propriedade intelectual, contratos SaaS e auditoria jurídica do código, com citações literais das leis.",
+  "author": { "name": "Aster" },
+  "license": "MIT",
+  "keywords": ["lgpd", "termos-de-uso", "politica-de-privacidade", "cdc", "marco-civil", "eca-digital", "startup", "brasil", "juridico"]
+}

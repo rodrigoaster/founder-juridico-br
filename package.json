@@ -1,0 +1,10 @@
+{
+  "name": "founder-juridico-br",
+  "private": true,
+  "scripts": {
+    "revisao": "node scripts/gerar_revisao.js"
+  },
+  "devDependencies": {
+    "docx": "9.5.1"
+  }
+}
