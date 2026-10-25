@@ -1,6 +1,6 @@
 # Índice das referências
 
-Trechos literais do acervo `leis`. Âncoras: `arquivo.md#art-N`. A tese do STF está em [stf-tema-987.md](stf-tema-987.md).
+Trechos literais do acervo `leis`. Âncoras: `<arquivo>.md#art-N`. A tese do STF está em [stf-tema-987.md](stf-tema-987.md).
 
 ## [Lei nº 13.709 de 14/08/2018](lgpd-13709-2018.md)
 

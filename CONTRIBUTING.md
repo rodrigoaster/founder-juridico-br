@@ -19,8 +19,11 @@ links internos quebrados.
 - Cada skill fica em `skills/<nome>/`, com `SKILL.md` (frontmatter `name` igual à pasta e
   `description` entre aspas) e os arquivos de apoio.
 - A `description` diz **quando** usar a skill, com as palavras que um founder digitaria.
-- Referências compartilhadas: `../../referencias/`.
-- Teste localmente com `claude --plugin-dir .` e `claude plugin validate .`.
+- Referências compartilhadas: escreva o caminho como `../../referencias/<arquivo>.md`; o
+  exportador reescreve esses caminhos nas skills avulsas.
+- Teste localmente com `claude --plugin-dir .` e `claude plugin validate .`, e rode
+  `python3 scripts/exportar_skills.py` (a CI falha se uma skill avulsa apontar para fora
+  da própria pasta).
 
 ## O que não aceitamos
 - Jurisprudência sem fonte no acervo.

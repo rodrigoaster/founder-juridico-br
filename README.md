@@ -10,9 +10,11 @@ oficial.
 > Conteúdo informativo. **Não é consultoria jurídica e não substitui advogado.** Os textos
 > legais são de out/2026 e podem ter mudado; confira a fonte antes de usar.
 >
-> **Status:** versão 0.1.0, ainda sem revisão por advogado. A revisão está em andamento.
+> **Status:** versão 0.2.0, ainda sem revisão por advogado. A revisão está em andamento.
 
 ## Instalação
+
+### Claude Code (plugin completo)
 
 ```
 /plugin marketplace add rodrigoaster/founder-juridico-br
@@ -20,6 +22,21 @@ oficial.
 ```
 
 Para testar localmente a partir de um clone: `claude --plugin-dir ./founder-juridico-br`.
+
+### Fora do Claude Code (skills avulsas)
+
+Cada [release](https://github.com/rodrigoaster/founder-juridico-br/releases/latest) traz um
+`.zip` por skill. Cada zip é uma pasta autocontida no formato `SKILL.md`, com as regras
+comuns e só as leis que aquela skill cita.
+
+- **claude.ai e app do Claude:** envie o `.zip` na área de Skills das configurações.
+- **Claude Code sem o plugin:** descompacte em `.claude/skills/` (no projeto) ou em
+  `~/.claude/skills/` (para todos os projetos).
+- **Outros agentes compatíveis com Agent Skills:** descompacte no diretório de skills da
+  ferramenta, conforme a documentação dela.
+
+A skill `auditoria-juridica` já leva os guias das demais. As outras funcionam sozinhas; as
+menções a outra skill só valem se ela também estiver instalada.
 
 ## Skills
 
@@ -55,6 +72,7 @@ referencias/indice.md       tema → artigo → arquivo
 scripts/extrair_artigos.py  regera referencias/ a partir do acervo
 scripts/validar.py          checagem da CI
 scripts/gerar_revisao.js    gera o Word para revisão jurídica
+scripts/exportar_skills.py  gera as skills avulsas em dist/ (pastas e .zip)
 ```
 
 As skills só citam artigos presentes em `referencias/`. O que não está ali aparece marcado
@@ -86,6 +104,9 @@ perguntas por guia e anexo de artigos (as perguntas ficam em `GUIAS`, no topo do
 npm install
 npm run revisao -- guias-revisao.docx
 ```
+
+Para gerar as skills avulsas localmente: `python3 scripts/exportar_skills.py`. Uma tag
+`vX.Y.Z` igual à versão do `plugin.json` publica a release com os zips.
 
 Contribuições: veja [CONTRIBUTING.md](CONTRIBUTING.md).
 

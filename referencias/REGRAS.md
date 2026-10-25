@@ -4,7 +4,7 @@ Estas regras valem para qualquer skill do plugin. Os caminhos são relativos à 
 
 ## Antes de escrever
 Pergunte só o que faltar sobre o produto:
-- B2C, B2B ou ambos? (define se o CDC se aplica — `cdc-8078-1990.md#art-2`)
+- B2C, B2B ou ambos? (define se o CDC se aplica — `referencias/cdc-8078-1990.md#art-2`)
 - Que dados pessoais coleta, para quê, com quem compartilha, onde hospeda (fora do Brasil?)
 - Cobra? Assinatura recorrente, teste grátis, renovação automática?
 - Usuários publicam conteúdo, há chat, marketplace, IA gerando conteúdo?
@@ -20,7 +20,7 @@ Se a pessoa estiver num repositório do produto, prefira verificar no código a 
 - O que não estiver em `referencias/` vai marcado como **"não verificado no acervo"**, com a
   URL oficial (ex.: Lei 9.609/1998, LC 182/2021, resoluções da ANPD).
 - Não invente jurisprudência. A única tese incluída é a do STF sobre o art. 19 do Marco Civil
-  (`stf-tema-987.md`), que vem truncada na fonte; avise isso ao usar.
+  (`referencias/stf-tema-987.md`), que vem truncada na fonte; avise isso ao usar.
 - Informe a data `baixado_em` dos textos: leis mudam.
 
 ## Ao entregar

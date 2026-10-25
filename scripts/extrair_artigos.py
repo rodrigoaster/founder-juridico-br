@@ -71,7 +71,7 @@ def main(repo):
     destino.mkdir(exist_ok=True)
     faltando = []
     indice = ["# Índice das referências", "",
-              "Trechos literais do acervo `leis`. Âncoras: `arquivo.md#art-N`. "
+              "Trechos literais do acervo `leis`. Âncoras: `<arquivo>.md#art-N`. "
               "A tese do STF está em [stf-tema-987.md](stf-tema-987.md).", ""]
     for nome, (rel, selecao) in SELECAO.items():
         meta, linhas = ler(repo / rel)
