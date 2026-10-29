@@ -110,6 +110,10 @@ As skills só citam artigos que estão em [`referencias/`](referencias/indice.md
 literais extraídos das fontes oficiais. O que não está ali aparece marcado como
 **"não verificado no acervo"**, com a URL oficial para você conferir.
 
+O plugin foi construído a partir do acervo de legislação
+[ctresb/leis](https://github.com/ctresb/leis). É dele que saem os trechos de
+`referencias/` e a validação das citações.
+
 **Leis incluídas:** LGPD (13.709/2018) · Marco Civil da Internet (12.965/2014) e
 Decreto 8.771/2016 · CDC (8.078/1990) e Decreto 7.962/2013 · Código Civil (10.406/2002) ·
 ECA Digital (15.211/2025) · Direitos Autorais (9.610/1998) · Propriedade Industrial
